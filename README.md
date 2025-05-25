@@ -75,7 +75,7 @@ To build an interactive dashboard that:
 - A320_rated-Batch![](C_A320_rated-Batch1.jpg)
 - B737_rated-Batch![](D_737_rated.jpg)
 - Dataset![](E_dataset.jpg)
-- Google sheet_API link![](E_dataset.jpg)
+- Google sheet_API link![](F_google sheet_API link.jpg)
 
 
 
