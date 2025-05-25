@@ -69,6 +69,12 @@ To build an interactive dashboard that:
 4. Set up scheduled refresh (15-day interval via twice-monthly setup)
 
 ## 📥 Visualisations
-
+![Data Pipeline](A0_data_pipeline.jpg)
+![Dashboard](A.jpg)
+![Dashboard 2](B.jpg)
+![A320_rated-Batch](C_A320_rated-Batch1.jpg)
+![B737_rated-Batch](D_737_rated.jpg)
+![Dataset](E_dataset.jpg)
+![Google sheet_API link](E_dataset.jpg)
 
 
