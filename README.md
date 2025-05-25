@@ -4,13 +4,26 @@ This Power BI project visualizes real-time pilot induction data collected via Go
 
 ---
 
-## 🎯 Objective
+## 🌟 STAR Summary
 
-To create an automated and interactive dashboard that:
-- Tracks pilot application submissions and compliance
-- Monitors license expiry timelines
-- Analyzes pilot demographics (height, aircraft rating, flying hours)
-- Assists management in scheduling, follow-ups, and risk identification
+**S – Situation:**  
+Post Covid, a growing number of pilot applicants needed a centralized and efficient way to track induction progress, compliance, and training readiness.
+
+**T – Task:**  
+Design a solution that collects data from pilots, organizes it, and presents it in a dashboard that is easy for stakeholders to understand and act upon.
+
+**A – Action:**  
+- Created a Google Form for pilot data submission  
+- Linked form to a Google Sheet for real-time data capture  
+- Connected the sheet to Power BI using a web connector  
+- Transformed, cleaned, and modeled data using Power Query and DAX  
+- Built interactive visuals to monitor compliance, batch status, and trends  
+- Set up auto-refresh every 15 days via Power BI Service
+
+**R – Result:**  
+- Improved visibility into pilot induction and compliance metrics  
+- Enabled timely decision-making for training and approvals  
+- Delivered a user-friendly dashboard with automated updates  
 
 ---
 
