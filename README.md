@@ -15,7 +15,7 @@
 - Google API integrated with auto referesh feature
 
 ## Preview
-![Dashboard Screenshot](images/dashboard_overview.png)
+![Dashboard Screenshot](1.jpg)
 
 
 ## License
