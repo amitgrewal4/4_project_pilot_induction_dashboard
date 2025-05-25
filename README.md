@@ -14,9 +14,14 @@
 - Google Sheets / Excel
 - Google API integrated with auto referesh feature
 
+## Dataset Used
+
+
 ## Preview
 ![Dashboard Screenshot](1.jpg)
-
+![Dashboard Screenshot](2.jpg)
+![Dashboard with Power BI interface](3.jpg)
+![Dashboard working showing application received for Batch 2](3.jpg)
 
 ## License
 MIT
