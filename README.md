@@ -64,14 +64,11 @@ To build an interactive dashboard that:
 ## 📥 Deployment
 
 1. Open `Pilot_Induction_Dashboard.pbix` in Power BI Desktop
-2. Replace source with your Google Sheet or Excel path if needed
+2. Replace source with your Google Sheet path 
 3. Publish to Power BI Service
 4. Set up scheduled refresh (15-day interval via twice-monthly setup)
 
----
+## 📥 Visualisations
 
-## 📎 License
-
-This project is licensed under the MIT License.
 
 
