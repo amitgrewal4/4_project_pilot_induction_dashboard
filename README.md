@@ -1,72 +1,82 @@
 # ✈️ Pilot Induction Dashboard (Mar to Sep 2022)
 
-This Power BI project visualizes and monitors the pilot induction process using key performance indicators (KPIs), compliance tracking, and demographic analysis.
+This Power BI project visualizes real-time pilot induction data collected via Google Forms and maintained in a centralized Google Sheet. The dashboard provides insights into application submissions, license compliance, and pilot readiness across batches.
 
 ---
 
 ## 🎯 Objective
 
-To build an interactive dashboard that:
-- Tracks pilot application submissions and license expiries
-- Monitors compliance status across batches
-- Analyzes pilot demographic trends (e.g., height, aircraft rating, flying hours)
-- Helps stakeholders identify risks and optimize induction scheduling
+To create an automated and interactive dashboard that:
+- Tracks pilot application submissions and compliance
+- Monitors license expiry timelines
+- Analyzes pilot demographics (height, aircraft rating, flying hours)
+- Assists management in scheduling, follow-ups, and risk identification
 
 ---
 
-## 📁 Data Source
+## 📁 Data Source & Flow
 
-- **File Name**: `Pilot_Induction_Dataset.csv` (Google Sheets/Excel)
-- **Fields Used**:  
-  - `Pilot Name`, `Batch`, `Submission Date`, `Compliance Status`, `License Number`  
-  - `Aircraft Rating`, `Height in CM`, `Flying Hours`, `Rated/Non-Rated`, `Remarks`  
+- **Step 1**: Pilots submit induction details through a **Google Form**
+- **Step 2**: Form responses are automatically stored in a linked **Google Sheet**
+- **Step 3**: Google Sheet is connected to **Power BI** via web link
+- **Step 4**: Data is cleaned, transformed, and visualized in Power BI
+- **Step 5**: Scheduled refresh is enabled every 15 days via Power BI Service
 
 ---
 
 ## 🔄 Data Pipeline
 
-| Step | Process                         | Tool Used       |
-|------|----------------------------------|-----------------|
-| 1️⃣   | Data Collection                 | Google Sheets / Excel |
-| 2️⃣   | Data Import                     | Power BI Desktop |
-| 3️⃣   | Data Transformation             | Power Query Editor (Clean, Format, Extract Month/Year) |
-| 4️⃣   | Data Modeling                   | Single-table model, DAX measures, calculated columns |
-| 5️⃣   | Dashboard Creation              | Power BI Visuals and Slicers |
-| 6️⃣   | Scheduled Refresh (every 15 days) | Power BI Service |
+| Step | Process                         | Tool Used          |
+|------|----------------------------------|--------------------|
+| 1️⃣   | Data Collection via Form       | Google Forms       |
+| 2️⃣   | Data Storage                   | Google Sheets      |
+| 3️⃣   | Data Import                    | Power BI Web Connector |
+| 4️⃣   | Data Transformation            | Power Query Editor |
+| 5️⃣   | Visualization & Modelling     | Power BI Desktop   |
+| 6️⃣   | Auto Refresh (15-Day Interval) | Power BI Service   |
 
 ---
 
 ## 📊 Key Visualizations
 
-| Visual Type                    | Purpose                                     |
-|-------------------------------|---------------------------------------------|
-| Gauge                         | Total Submission Count                      |
-| Clustered Column Chart        | Submissions by Month                        |
-| Pie/Donut Charts              | Compliance Status Breakdown                 |
-| Bar Chart                     | License Expiry Trends by Month              |
-| Word Cloud                    | Frequent Pilot & Department Remarks         |
-| Histogram                     | Average Height per Month                    |
-| Slicer Panel                  | Filters by Batch, Quarter, Rating, Status   |
+| Visual Type               | Purpose                                                |
+|---------------------------|--------------------------------------------------------|
+| KPI Cards                 | Total Submissions, % Rated, Avg Flying Hours           |
+| Line & Bar Charts         | Submission Trends, License Expiry by Month             |
+| Pie / Donut Charts        | Compliance Status Breakdown                            |
+| Word Clouds               | Frequent Pilot & Department Remarks                    |
+| Histograms / Box Plots    | Height Distribution                                    |
+| Tables with Conditional Formatting | View pilot-level info, flag risk or expiry       |
+| Slicers                   | Filter by Batch, Rating, Compliance, Month             |
 
 ---
 
-## ✅ Outcome: How the Objective Was Achieved
+## ✅ Achievements
 
-- 🗓️ Mapped monthly submission patterns to highlight peak activity
-- 📉 Identified non-compliant pilots using visual breakdowns
-- 📏 Analyzed pilot physical readiness and training eligibility
-- 📞 Surfaced communication issues through common remarks
-- ✈️ Grouped aircraft type proficiency to optimize future flight allocations
-- 🔁 Enabled automated updates every 15 days for real-time insights
+- 🧾 Seamless data collection from 600+ pilots via Google Forms
+- 📊 Real-time insights through connected Google Sheet + Power BI integration
+- 📉 Identified non-compliance cases and expiring licenses at a glance
+- 📈 Highlighted patterns in training readiness, batch performance, and ratings
+- 🔁 Enabled semi-monthly auto-refresh for up-to-date decision support
 
 ---
 
-## 📥 Deployment
+## 🧰 Tools & Technologies
 
-1. Open `Pilot_Induction_Dashboard.pbix` in Power BI Desktop
-2. Replace source with your Google Sheet path 
-3. Publish to Power BI Service
-4. Set up scheduled refresh (15-day interval via twice-monthly setup)
+- **Google Forms** – Front-end for pilot submissions  
+- **Google Sheets** – Real-time data aggregation  
+- **Power BI Desktop** – Data modeling, transformation, and visualization  
+- **Power BI Service** – Publishing & auto-refresh scheduling  
+
+---
+
+## 🚀 Deployment Instructions
+
+1. Link your Power BI report to the Google Sheet via Web > CSV export link  
+2. Open `Pilot_Induction_Dashboard.pbix` and refresh the data  
+3. Publish to Power BI Service  
+4. Under Dataset Settings → Schedule refresh → Set twice-monthly refresh
+
 
 ## 📥 Visualisations
 - Data Pipeline![](A0_data_pipeline.jpg)
@@ -75,7 +85,7 @@ To build an interactive dashboard that:
 - A320_rated-Batch![](C_A320_rated-Batch1.jpg)
 - B737_rated-Batch![](D_737_rated.jpg)
 - Dataset![](E_dataset.jpg)
-- Google sheet_API link ![](F_google sheet_API_link.jpg)
+- Google sheet_API link ![](F_google_sheet_API_link.jpg)
 
 
 
